@@ -15,4 +15,5 @@
     <string name="backDay">&lt;</string>
     <string name="returnYear">戻る</string>
     <string name="moveMonth">></string>
+    <string name="username">氏名</string>
 </resources>
