@@ -54,6 +54,11 @@
             android:name="com.mikankui.hanasite.kakeibo.MonthListViewActivity"
             android:label="@string/app_name" >
         </activity>
+
+        <activity
+            android:name="com.mikankui.hanasite.kakeibo.DayListViewActivity"
+            android:label="@string/app_name" >
+        </activity>
         
         <activity
             android:name="com.mikankui.hanasite.kakeibo.PreferenceActivity"
