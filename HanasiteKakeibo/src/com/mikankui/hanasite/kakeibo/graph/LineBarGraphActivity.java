@@ -25,7 +25,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.widget.LinearLayout;
 
-public class LineBarGraph extends Activity {
+public class LineBarGraphActivity extends Activity {
 
 	ArrayList<GraphData> GRAPH_DATA = new ArrayList<GraphData>();
 

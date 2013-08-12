@@ -46,7 +46,7 @@
         </activity>
         
         <activity
-            android:name="com.mikankui.hanasite.kakeibo.graph.LineBarGraph"
+            android:name="com.mikankui.hanasite.kakeibo.graph.LineBarGraphActivity"
             android:label="@string/app_name" >
         </activity>
 

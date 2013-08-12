@@ -13,7 +13,11 @@
     <string name="backMonth">&lt;</string>
     <string name="nextDay">></string>
     <string name="backDay">&lt;</string>
-    <string name="returnYear">戻る</string>
+    <string name="returnYear">←</string>
     <string name="moveMonth">></string>
     <string name="username">氏名</string>
+    <string name="help">HELP</string>
+    <string name="top">TOPへ</string>
+    <string name="setting">環境設定</string>
+    <string name="graph">グラフ</string>
 </resources>

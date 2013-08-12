@@ -3,21 +3,20 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-    
-
             
     <ListView
         android:id="@+id/android:list"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" 
-        android:layout_below="@+id/date">
+        android:layout_below="@+id/date"
+        android:layout_above="@+id/menu">
     </ListView>
     
 	    <jp.adlantis.android.AdlantisView
 	    	android:id="@+id/adView"
 	    	android:layout_width="fill_parent" 
 	    	android:layout_height="50dp"
-	    	android:layout_alignParentTop="true"
+	    	android:layout_alignParentBottom="true"
 			/>
         
     <LinearLayout
@@ -26,46 +25,82 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal" 
         android:layout_below="@+id/adView"
+        android:gravity="right"
+        android:layout_alignParentTop="true"
         >
         
         <Button 
             android:id="@+id/back_day"
             android:layout_width="50dp"
             android:layout_height="40dp"
-            android:text="@string/backMonth"
+            android:text="@string/backDay"
             />
         
         <TextView
             android:id="@+id/dayPicker"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="0dp"
+            android:gravity="center"
         	android:padding="0dp"
             />
         <Button 
             android:id="@+id/next_day"
             android:layout_width="50dp"
             android:layout_height="40dp"
-            android:text="@string/nextMonth"
+            android:text="@string/nextDay"
             />      
 
         <TextView
             android:id="@+id/daySum"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="0dp"
-        	android:padding="0dp"
+            android:gravity="center"
+        	android:paddingRight="0dp"
              />
         
          <Button 
             android:id="@+id/move_monthList"
-            android:layout_width="50dp"
+            android:layout_width="60dp"
             android:layout_height="40dp"
             android:text="@string/returnYear"
             /> 
         
     </LinearLayout>
         
+    <!-- bottom menu  -->
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_above="@+id/adView"
+        >
+
+        <Button 
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help"
+            />
+        
+        <Button
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/top"
+            />
+        <Button 
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting"
+            />      
+
+        <Button
+            android:id="@+id/graph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/graph"
+             />
+    </LinearLayout>
 </RelativeLayout>

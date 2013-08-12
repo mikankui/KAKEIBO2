@@ -24,7 +24,7 @@ import android.widget.Toast;
 import com.mikankui.hanasite.kakeibo.R;
 import com.mikankui.hanasite.kakeibo.db.DbAdapter;
 import com.mikankui.hanasite.kakeibo.db.MEISAI;
-import com.mikankui.hanasite.kakeibo.graph.LineBarGraph;
+import com.mikankui.hanasite.kakeibo.graph.LineBarGraphActivity;
 import com.mikankui.hanasite.kakeibo.input.UpdateDbByLine;
 
 /**
@@ -330,7 +330,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			break;
 		case R.id.BTN_GRAPH:
 			if (graph.size() > 0) {
-				Intent intent = new Intent(this, LineBarGraph.class);
+				Intent intent = new Intent(this, LineBarGraphActivity.class);
 				intent.setAction(Intent.ACTION_VIEW);
 				intent.putExtra("data", graph);
 				startActivity(intent);
