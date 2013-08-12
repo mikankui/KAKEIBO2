@@ -17,4 +17,10 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+		<style name="Animation" parent="android:Animation" />
+		<style name="Animation.Activity" parent="android:Animation.Activity">
+			<item name="android:activityOpenEnterAnimation">@anim/activity_open_enter</item>
+			<item name="android:activityOpenExitAnimation">@anim/activity_open_exit</item>
+		</style>
+
 </resources>

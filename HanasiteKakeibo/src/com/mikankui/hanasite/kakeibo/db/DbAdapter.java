@@ -21,31 +21,34 @@ public class DbAdapter extends ContentProvider {
 
 	@Override
 	public Uri insert(Uri uri, ContentValues values) {
-		String table=uri.getLastPathSegment();
-		Log.d(this.toString(),"insert db is " + db.toString());
-		Log.d(this.toString(),"insert table is " + table);
-		Log.d(this.toString(),"insert uri is " + uri);
-		Log.d(this.toString(),"insert values are " + values.toString());
+		String table = uri.getLastPathSegment();
+		Log.d(this.toString(), "insert db is " + db.toString());
+		Log.d(this.toString(), "insert table is " + table);
+		Log.d(this.toString(), "insert uri is " + uri);
+		Log.d(this.toString(), "insert values are " + values.toString());
 		db.insert(table, null, values);
 		return uri;
 	}
 
 	@Override
-	public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs,
-			String orderBy) {
-		String table=uri.getLastPathSegment();
-	    return db.query(table, null, selection, selectionArgs, null, null, orderBy);
+	public Cursor query(Uri uri, String[] projection, String selection,
+			String[] selectionArgs, String orderBy) {
+		String table = uri.getLastPathSegment();
+		return db.query(table, null, selection, selectionArgs, null, null,
+				orderBy);
 	}
 
-	public Cursor queryraw(Uri uri, String[] projection, String selection, String[] selectionArgs, String groupBy, String having,
+	public Cursor queryraw(Uri uri, String[] projection, String selection,
+			String[] selectionArgs, String groupBy, String having,
 			String orderBy) {
 		String table = uri.getLastPathSegment();
-	    return db.query(table, projection, selection, selectionArgs, groupBy, having, orderBy);
+		return db.query(table, projection, selection, selectionArgs, groupBy,
+				having, orderBy);
 	}
-	
+
 	@Override
 	public int delete(Uri uri, String arg1, String[] arg2) {
-		String table=uri.getLastPathSegment();
+		String table = uri.getLastPathSegment();
 		db.delete(table, arg1, arg2);
 		return 0;
 	}
@@ -57,14 +60,14 @@ public class DbAdapter extends ContentProvider {
 
 	@Override
 	public int update(Uri uri, ContentValues values, String arg2, String[] arg3) {
-		//db.update(uri.getLastPathSegment(),
-		//values, whereClause, whereArgs)
+		// db.update(uri.getLastPathSegment(),
+		// values, whereClause, whereArgs)
 		return 0;
 	}
 
-	public int getMaxId(Uri uri){
+	public int getMaxId(Uri uri) {
 		String table = uri.getLastPathSegment();
-		String sql = "select max(point) from " + table +";";
+		String sql = "select max(point) from " + table + ";";
 		Cursor c = db.rawQuery(sql, null);
 		return c.getInt(1);
 	}

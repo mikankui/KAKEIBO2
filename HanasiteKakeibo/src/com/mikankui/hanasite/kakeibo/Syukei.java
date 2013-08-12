@@ -6,5 +6,5 @@ public class Syukei {
 
 	private String result = "";
 	private StringBuffer s;
-	
+
 }

@@ -7,5 +7,12 @@
     <string name="month">月</string>
     <string name="day">日</string>
     <string name="unit">¥</string>
-
+    <string name="nextYear">></string>
+    <string name="backYear">&lt;</string>
+    <string name="nextMonth">></string>
+    <string name="backMonth">&lt;</string>
+    <string name="nextDay">></string>
+    <string name="backDay">&lt;</string>
+    <string name="returnYear">戻る</string>
+    <string name="moveMonth">></string>
 </resources>

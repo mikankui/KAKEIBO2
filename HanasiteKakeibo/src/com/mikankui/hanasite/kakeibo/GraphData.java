@@ -3,34 +3,33 @@ package com.mikankui.hanasite.kakeibo;
 import java.io.Serializable;
 import java.util.Date;
 
-public class GraphData implements Serializable  {
-	
-	private static final long serialVersionUID = 1L; 
-	
+public class GraphData implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
 	String tag;
 	Date X;
 	int Y;
-	
-	GraphData(String tag,Date x,int y){
+
+	GraphData(String tag, Date x, int y) {
 		this.tag = tag;
 		this.X = x;
 		this.Y = y;
 	}
-	
-	
-	public void setX(Date x){
+
+	public void setX(Date x) {
 		X = x;
 	}
-	
-	public void setY(int y){
+
+	public void setY(int y) {
 		Y = y;
 	}
 
-	public Date getX(){
+	public Date getX() {
 		return X;
 	}
-	
-	public int getY(){
+
+	public int getY() {
 		return Y;
 	}
 }

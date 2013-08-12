@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+
+            
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/date">
+    </ListView>
+    
+	    <jp.adlantis.android.AdlantisView
+	    	android:id="@+id/adView"
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="50dp"
+	    	android:layout_alignParentTop="true"
+			/>
+        
+    <LinearLayout
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_below="@+id/adView"
+        >
+        
+        <Button 
+            android:id="@+id/back_month"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:text="@string/backMonth"
+            />
+        
+        <TextView
+            android:id="@+id/monthPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="0dp"
+        	android:padding="0dp"
+            />
+        <Button 
+            android:id="@+id/next_month"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:text="@string/nextMonth"
+            />      
+
+        <TextView
+            android:id="@+id/monthSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="0dp"
+        	android:padding="0dp"
+             />
+        
+         <Button 
+            android:id="@+id/move_yearList"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:text="@string/returnYear"
+            /> 
+        
+    </LinearLayout>
+        
+</RelativeLayout>
