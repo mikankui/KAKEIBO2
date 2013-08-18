@@ -3,97 +3,54 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-    
+
     <ListView
         android:id="@+id/android:list"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" 
-        android:layout_below="@+id/date"
-        android:layout_above="@+id/menu">
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:layout_below="@+id/date" >
     </ListView>
-    
-	    <jp.adlantis.android.AdlantisView
-	    	android:id="@+id/adView"
-	    	android:layout_width="fill_parent" 
-	    	android:layout_height="50dp"
-	    	android:layout_alignParentBottom="true"
-			/>
-      
+
     <LinearLayout
         android:id="@+id/date"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" 
-        android:layout_below="@+id/adView"
-        android:gravity="right"
         android:layout_alignParentTop="true"
-        >
+        android:layout_below="@+id/adView"
+        android:background="#4048ff"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:textColor="#e0f3ff" >
 
-        <Button 
-            android:id="@+id/previousYear"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:text="@string/backYear"
-            />
-        
         <TextView
             android:id="@+id/yearPicker"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="0dp"
-            />
-        <Button 
-            android:id="@+id/nextYear"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:text="@string/nextYear"
-            />      
+            android:gravity="left"
+            android:textColor="#e0f3ff"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/yearSum"
-            android:layout_width="150dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:gravity="right"
-       		android:paddingRight="70dp"
-             />
+            android:textColor="#e0f3ff"
+            android:textSize="16sp" />
     </LinearLayout>
-    
-    
-    <!-- bottom menu  -->
-    <LinearLayout
-        android:id="@+id/menu"
+
+    <jp.adlantis.android.AdlantisView
+        android:id="@+id/adView"
         android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/menu" />
+
+    <include
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" 
-        android:layout_above="@+id/adView"
-        >
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_menu" />
 
-        <Button 
-            android:id="@+id/help"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/help"
-            />
-        
-        <Button
-            android:id="@+id/top"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/top"
-            />
-        <Button 
-            android:id="@+id/setting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/setting"
-            />      
-
-        <Button
-            android:id="@+id/graph"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/graph"
-             />
-    </LinearLayout>
 </RelativeLayout>

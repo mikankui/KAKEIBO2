@@ -10,22 +10,17 @@
         android:orientation="horizontal" >
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/userNameLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/username" />
 
-        <EditText
-            android:id="@+id/editText1"
+       <EditText
+            android:id="@+id/userName"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-
+            android:layout_height="wrap_content" />
     </LinearLayout>
-
+   
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -35,7 +30,26 @@
             android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="戻る" />
+        
+                <Button
+            android:id="@+id/resetPref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="クリア" />
+                
+                        <Button
+            android:id="@+id/loadPref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="読込" />
+                        
+                                <Button
+            android:id="@+id/setPref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存" />
+                                
     </LinearLayout>
 
 </LinearLayout>
