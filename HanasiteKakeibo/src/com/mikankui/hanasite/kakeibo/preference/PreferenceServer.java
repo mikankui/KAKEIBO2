@@ -1,0 +1,1 @@
+package com.mikankui.hanasite.kakeibo.preference;public class PreferenceServer {}

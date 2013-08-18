@@ -131,8 +131,7 @@ public class UpdateDbByLine {
 				// はじめにセパレートとしてListに登録された文字列を全て"SPLITSTR"に置き換え、
 				// その後一気に"SPRITSTRで分割する"
 				for (String split : splitter) {
-					tmp_koumoku_cost = tmp_koumoku_cost.replaceAll(split,
-							splitstr);
+					tmp_koumoku_cost = tmp_koumoku_cost.replaceAll(split,splitstr);
 				}
 				koumoku_cost = tmp_koumoku_cost.split(splitstr);
 

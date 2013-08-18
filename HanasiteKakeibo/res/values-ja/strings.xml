@@ -15,9 +15,18 @@
     <string name="backDay">&lt;</string>
     <string name="returnYear">←</string>
     <string name="moveMonth">></string>
-    <string name="username">氏名</string>
+    
+    <!-- Preference -->
+    <string name="settingTitle">設定画面</string>
+    <string name="setUserName">氏名を入力</string>
     <string name="help">HELP</string>
     <string name="top">TOPへ</string>
     <string name="setting">環境設定</string>
     <string name="graph">グラフ</string>
+    <string name="DB_ALL_CLEAR">DB全削除</string>
+    <string name="setBudget">月予算を設定</string>
+    <string name="setSplitter">区切り文字を設定</string>
+    <string name="DB_ALL_CLEAR_Action">実行</string>
+    <string name="loadPref">読込</string>
+    <string name="savePref">保存</string>
 </resources>
